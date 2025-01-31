@@ -1,2 +1,2 @@
 # Investice
-Systém na sledování investic
+Systém na sledování investic.
