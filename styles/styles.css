@@ -1,0 +1,236 @@
+/* styles.css */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #0056b3;
+  color: #fff;
+  padding: 1.5rem 2rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+/* Main Layout */
+main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Section Titles */
+section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #0056b3;
+}
+
+/* Dashboard */
+#dashboard {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+#portfolio-summary p {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+#portfolio-summary span {
+  font-weight: bold;
+  color: #0056b3;
+}
+
+#portfolio-summary-detail span {
+  font-weight: bold;
+  color: #0056b3;
+}
+
+#portfolio-summary-singles p {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  float:left;
+  margin-left:300px;
+}
+
+#portfolio-summary-singles span {
+  font-weight: bold;
+  color: #0056b3;
+}
+
+/* Form */
+#add-investment form {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#add-investment label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+#add-investment input,
+#add-investment select,
+#add-investment button {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#add-investment input:focus,
+#add-investment select:focus {
+  border-color: #0056b3;
+  outline: none;
+}
+
+#add-investment button {
+  background: #0056b3;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#add-investment button:hover {
+  background: #004494;
+}
+
+/* Table */
+#investment-list table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#investment-list th,
+#investment-list td {
+  text-align: left;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+#investment-list th {
+  background: #0056b3;
+  color: #fff;
+}
+
+#investment-list tr:last-child td {
+  border-bottom: none;
+}
+
+#investment-list tr:hover {
+  background: #f0f8ff;
+}
+
+#investment-list td button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background: #f44336;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#investment-list td button:hover {
+  background: #d32f2f;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #0056b3;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+#main-menu
+{
+  background: #c6dbf7;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.menu-button {
+  background-color: #0056b3; /* Základní barva */
+  color: #fff; /* Barva textu */
+  font-size: 1rem; /* Velikost textu */
+  padding: 0.75rem 1.5rem; /* Vnitřní odsazení */
+  border: none; /* Bez rámečku */
+  border-radius: 8px; /* Zaoblené rohy */
+  cursor: pointer; /* Změna kurzoru při najetí */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Jemný stín */
+  transition: background-color 0.2s ease, transform 0.2s ease; /* Plynulé přechody */
+  margin-top:0px;
+  margin-right:5px;
+}
+
+/* Hover efekt */
+.menu-button:hover {
+  background-color: #004494; /* Tmavší modrá při hoveru */
+  transform: scale(1.05); /* Jemné zvětšení */
+}
+
+/* Aktivní stav */
+.menu-button:active {
+  background-color: #003366; /* Ještě tmavší modrá při kliknutí */
+  transform: scale(0.98); /* Lehká komprese tlačítka */
+}
+
+.menu-button-special {
+  background-color: #032952; /* Základní barva */
+  color: #fff; /* Barva textu */
+  font-size: 1rem; /* Velikost textu */
+  padding: 0.75rem 1.5rem; /* Vnitřní odsazení */
+  border: none; /* Bez rámečku */
+  border-radius: 8px; /* Zaoblené rohy */
+  cursor: pointer; /* Změna kurzoru při najetí */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Jemný stín */
+  transition: background-color 0.2s ease, transform 0.2s ease; /* Plynulé přechody */
+  margin-top:0px;
+  margin-right:5px;
+}
+
+/* Hover efekt */
+.menu-button-special:hover {
+  background-color: #032952; /* Tmavší modrá při hoveru */
+  transform: scale(1.05); /* Jemné zvětšení */
+}
+
+/* Aktivní stav */
+.menu-button-special:active {
+  background-color: #032952; /* Ještě tmavší modrá při kliknutí */
+  transform: scale(0.98); /* Lehká komprese tlačítka */
+}

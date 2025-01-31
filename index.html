@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sledování Investic</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Sledování Investic</h1>
+  </header>
+ 
+  
+  <main>
+     <menu id="main-menu">
+    <button class="menu-button">Dashboard</button>
+    
+    <button class="menu-button">Investice</button>
+
+    <button class="menu-button">Grafy</button>
+
+    <button class="menu-button">Nefinanční intrumenty</button>
+
+    <button class="menu-button-special">Kontrola portfolia</button>
+    
+  </menu>
+    <!-- Dashboard -->
+    <section id="dashboard">
+      <h2>Přehled Portfolia</h2>
+      <div id="portfolio-summary">
+        <p>Celková hodnota: <span id="total-value">0 Kč</span></p>
+        <p>Celková investice: <span id="total-profit-loss">0 Kč</span></p>
+        <p>Celkové zisky/ztráty: <span id="total-profit-loss">0 Kč</span> ke dni: 15.2.2025</p>
+      </div>
+    </section>
+
+       <section id="dashboard">
+      <h2>Přehled jednotlivých komponent</h2>
+      <div id="portfolio-summary-detail">
+        <p>Celková hodnota: <span id="total-value">0 Kč</span></p>
+        <p>Celkové zisky/ztráty: <span id="total-profit-loss">0 Kč</span></p>
+      </div>
+    </section>
+    
+    <!-- Formulář pro přidání investice -->
+    <section id="add-investment">
+      <h2>Přidat Novou Investici</h2>
+      <form id="investment-form">
+             
+        <label for="investment-price">Datum</label>
+        <input type="date" id="investment-date" required>
+
+        <label for="investment-amount">Investice:</label>
+        <input type="number" id="investment-amount" required>
+        
+        <label for="investment-category">Kategorie:</label>
+        <select id="investment-category">
+          <option value="bitcoin">Bitcoin</option>
+          <option value="portu">Portu Akcie</option>
+          <option value="portu-dip">Portu DIP</option>
+          <option value="investown">Investown</option>
+          <option value="goldengate">GoldenGate</option>
+        </select>
+        
+        <button type="submit">Přidat Investici</button>
+      </form>
+    </section>
+    
+    <!-- Seznam investic -->
+    <section id="investment-list">
+      <h2>Seznam Investic</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Datum</th>
+            <th>Kategorie</th>
+            <th>Částka</th>
+            <th>Akce</th>
+          </tr>
+        </thead>
+        <tbody id="investments-table-body">
+          <!-- Investice budou přidávány sem dynamicky pomocí JavaScriptu -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sledování Investic</p>
+  </footer>
+  
+  <script src="js/investice.js"></script>
+</body>
+</html>
